@@ -1,0 +1,22 @@
+{
+	"editors": [
+		{
+			"type": "form",
+			"id": 501,
+			"formName": "PROJET"
+		},
+		{
+			"type": "method",
+			"id": 2147483640,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "PROJET",
+				"objectName": "Bouton",
+				"methodPath": "/SOURCES/Forms/PROJET/ObjectMethods/Bouton.4dm"
+			}
+		},
+		{
+			"type": "explorer"
+		}
+	]
+}

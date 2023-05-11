@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>TITLE</title>
+		<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/styles.css?vers=1">
+
+
+		<script src="/vendors/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/0.9.1/jquery.tablednd.js" integrity="sha256-d3rtug+Hg1GZPB7Y/yTcRixO/wlI78+2m08tosoRn7A=" crossorigin="anonymous"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script> -->
+
+		<script src="/scripts/script.js?vers=4"></script>
+
+	</head>
+	<body>
+
+			<h1>Accueille</h1>
+			<div class="container mt-3">
+
+				<!--#4DTEXT Current Time--><br />
+				<!--#4DIF (web_context.utilisateur # Null)-->
+					Bonjour : <!--4DTEXT web_context.utilisateur.Prenom--><br>
+					<a href="/account.shtml" class="btn btn-sm btn-primary mt-3">Mon compte</a><br>
+					<button id="btn_logout" class="btn btn-sm btn-danger">Déconnection</button>
+				<!--#4DELSE-->
+					<a href="/inscription.shtml" class="btn btn-sm btn-primary">Inscription</a><br>
+					<a href="/login.shtml" class="btn btn-sm btn-primary mt-3">Connection</a><br>
+				<!--#4DENDIF-->
+
+			<br><br><br>
+			<!--#4DSCRIPT/web_load_evenements-->
+	
+			<table class="table table-bordered">
+				<tr><th>Nom</th><th>Ville</th></tr>
+			<!--#4DEACH $evenement in web_load_evenements.evenements -->
+				<tr>
+					<td>$4DTEXT([EVENEMENT]Nom)</td>
+					<td>$4DTEXT([EVENEMENT]Ville)</td>
+				</tr>
+			<!--#4DENDEACH-->
+			</table>
+			</div>
+	</body>
+	<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

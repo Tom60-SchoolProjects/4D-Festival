@@ -1,0 +1,184 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 17,
+					"top": 22,
+					"width": 379,
+					"height": 343,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "currentSelection",
+					"table": "EVENEMENT",
+					"columns": [
+						{
+							"header": {
+								"text": "Nom",
+								"name": "Nom"
+							},
+							"name": "[ETABLISSEMENT]Nom",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "[EVENEMENT:3]Libelle:2"
+						},
+						{
+							"header": {
+								"name": "Date",
+								"text": "Date"
+							},
+							"name": "[ETABLISSEMENT]Ville",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "[EVENEMENT:3]Date_Debut:3"
+						}
+					]
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 489,
+					"top": 64,
+					"width": 120,
+					"height": 16,
+					"dataSource": "[EVENEMENT:3]Libelle:2"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 489,
+					"top": 92,
+					"width": 120,
+					"height": 16,
+					"dataSource": "[EVENEMENT:3]Date_Debut:3"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 192,
+					"left": 515,
+					"width": 71,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Nouveau",
+					"top": 392,
+					"left": 261,
+					"width": 71,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Nom :",
+					"top": 65,
+					"left": 405,
+					"width": 40,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Date de début :",
+					"top": 93,
+					"left": 405,
+					"width": 81,
+					"height": 15
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 489,
+					"top": 117,
+					"width": 120,
+					"height": 16,
+					"dataSource": "[EVENEMENT:3]Date_Fin:4"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Date de fin :",
+					"top": 118,
+					"left": 405,
+					"width": 66,
+					"height": 15
+				},
+				"Bouton2": {
+					"type": "button",
+					"text": "Suprimmer",
+					"top": 194,
+					"left": 407,
+					"width": 93,
+					"height": 18,
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton3": {
+					"type": "button",
+					"text": "Modifier",
+					"top": 25,
+					"left": 406,
+					"width": 212,
+					"height": 20,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 116,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

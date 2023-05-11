@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bar de rechercher pour chercher des libelle d'evenement -->
+    <input id="input_search_libelle" type="text" name="Libelle" placeholder="Libelle">
+
+    <div id="liste_evenements"> </div>
+    <button id="btn_load">Load</button>
+
+    <script>
+        // Fonction qui apelle en ajax l'api rest de 4D pour récupérer la liste des événements
+        function loadEvents() {
+            // On crée un objet XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+
+            // On définit la fonction callback
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // On parse le JSON
+                    var events = JSON.parse(xhr.responseText);
+
+                    // On récupère la liste des événements
+                    var liste = document.getElementById("liste_evenements");
+
+                    // On vide la liste
+                    liste.innerHTML = "";
+
+                    // On parcourt les événements
+                    for (var i = 0; i < events.__COUNT; i++) {
+                        // On ajoute le texte de l'événement
+                        liste.innerHTML += events.__ENTITIES[i].Libelle + ", ";
+                    }
+                }
+            };
+
+            // On ouvre la requête
+            var search = document.getElementById("input_search_libelle").value;
+            xhr.open("GET", 'http://localhost/rest/Evenement?$filter="Libelle = \'@' + search + '@\'"', true);
+
+            // On envoie la requête
+            xhr.send();
+        }
+
+        // On ajoute un écouteur d'événement sur le bouton
+        document.getElementById("btn_load").addEventListener("click", loadEvents);
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+	"Sources/Methods/TD_001.4dm": {
+		"left": 3,
+		"top": 132,
+		"width": 1000,
+		"height": 599
+	},
+	"Sources/Methods/TD_002.4dm": {
+		"left": 175,
+		"top": 156,
+		"width": 995,
+		"height": 488
+	},
+	"Sources/Methods/TD_003.4dm": {
+		"left": 76,
+		"top": 167,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/TD_003_2.4dm": {
+		"left": -147,
+		"top": 241,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/TD_004.4dm": {
+		"left": 0,
+		"top": 108,
+		"width": 965,
+		"height": 706
+	},
+	"Sources/Methods/TD_003_3.4dm": {
+		"left": -147,
+		"top": 241,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Forms/PROJET/method.4dm": {
+		"left": 242,
+		"top": 115,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Classes/WebForms.4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Sources/Classes/Classe13.4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Trash/Classes/Classe13.4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Trash/Classes/WebForms.4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Trash/Methods/(Methode7).4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Trash/Methods/(Methode8).4dm": {
+		"left": 0,
+		"top": 168,
+		"width": 965,
+		"height": 626
+	},
+	"Sources/Methods/web_load_evenements.4dm": {
+		"left": 58,
+		"top": 160,
+		"width": 522,
+		"height": 438
+	},
+	"Sources/Forms/PROJET/ObjectMethods/Bouton2.4dm": {
+		"left": 520,
+		"top": 151,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/PROJET/ObjectMethods/Bouton3.4dm": {
+		"left": -213,
+		"top": 238,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/PROJET/ObjectMethods/List Box.4dm": {
+		"left": -279,
+		"top": 183,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/PROJET/ObjectMethods/Bouton.4dm": {
+		"left": 34,
+		"top": 169,
+		"width": 614,
+		"height": 438
+	}
+}

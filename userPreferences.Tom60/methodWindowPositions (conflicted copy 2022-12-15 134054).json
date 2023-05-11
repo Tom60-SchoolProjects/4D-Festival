@@ -1,0 +1,56 @@
+{
+	"Sources/Methods/TD_001.4dm": {
+		"left": 3,
+		"top": 132,
+		"width": 1000,
+		"height": 599
+	},
+	"Sources/Methods/TD_002.4dm": {
+		"left": 175,
+		"top": 156,
+		"width": 995,
+		"height": 488
+	},
+	"Sources/Methods/TD_003.4dm": {
+		"left": 76,
+		"top": 167,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/TD_003_2.4dm": {
+		"left": -147,
+		"top": 241,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Methods/TD_004.4dm": {
+		"left": 0,
+		"top": 108,
+		"width": 965,
+		"height": 706
+	},
+	"Sources/Methods/TD_003_3.4dm": {
+		"left": -147,
+		"top": 241,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Forms/PROJET/method.4dm": {
+		"left": 241,
+		"top": 175,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Forms/PROJET/ObjectMethods/Bouton1.4dm": {
+		"left": 432,
+		"top": 174,
+		"width": 1000,
+		"height": 488
+	},
+	"Sources/Forms/PROJET/ObjectMethods/Bouton.4dm": {
+		"left": 218,
+		"top": 170,
+		"width": 1000,
+		"height": 488
+	}
+}
