@@ -1,8 +1,8 @@
 var $result : Object
-$result:=Form:C1466.displayedEvenement.lock()
+$result:=Form:C1466.edited_evenement.lock()
 
 If ($result.success)
-	// C'est tout bon, je peux modifier
+	[Zone de saisie Evenement Libelle]Enable!=True:C214
 Else 
 	ALERT:C41("QQ1 d'autre modifie cet enreg.")
 End if 

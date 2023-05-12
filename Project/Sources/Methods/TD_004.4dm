@@ -1,7 +1,7 @@
 //%attributes = {}
 Begin SQL
 	
-	DELETE FROM EVENEMENT WHERE (Libelle = 'GC')
+	DELETE FROM Evenement WHERE (Libelle = 'GC')
 	
 End SQL
 
