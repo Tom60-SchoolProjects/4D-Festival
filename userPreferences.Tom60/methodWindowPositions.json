@@ -138,10 +138,10 @@
 		"height": 488
 	},
 	"Sources/Forms/Formulaire gestion evenements/ObjectMethods/Bouton3.4dm": {
-		"left": 325,
-		"top": 194,
-		"width": 557,
-		"height": 488
+		"left": 33,
+		"top": 135,
+		"width": 522,
+		"height": 438
 	},
 	"Sources/Forms/Formulaire gestion evenements/ObjectMethods/Listbox Evenements.4dm": {
 		"left": 242,
@@ -156,9 +156,117 @@
 		"height": 488
 	},
 	"Sources/Forms/Formulaire gestion evenements/ObjectMethods/Bouton2.4dm": {
-		"left": 375,
-		"top": 385,
-		"width": 1000,
-		"height": 488
+		"left": 7,
+		"top": 109,
+		"width": 522,
+		"height": 438
+	},
+	"Sources/Forms/Formulaire gestion evenements (/method.4dm": {
+		"left": 68,
+		"top": 203,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/Formulaire gestion evenements (/ObjectMethods/Bouton3.4dm": {
+		"left": 10,
+		"top": 315,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/Formulaire gestion evenements (/ObjectMethods/Bouton.4dm": {
+		"left": 68,
+		"top": 203,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Bouton2.4dm": {
+		"left": 127,
+		"top": 220,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Bouton.4dm": {
+		"left": -310,
+		"top": 336,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/method.4dm": {
+		"left": -470,
+		"top": 348,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Bouton3.4dm": {
+		"left": 17,
+		"top": 225,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Bouton1.4dm": {
+		"left": 34,
+		"top": 271,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Saisie de date Evenement Date fin.4dm": {
+		"left": -316,
+		"top": 262,
+		"width": 820,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Zone de saisie Evenement Libelle.4dm": {
+		"left": -327,
+		"top": 320,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Listbox Evenements.4dm": {
+		"left": 17,
+		"top": 225,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Methods/load_evenements.4dm": {
+		"left": -269,
+		"top": 327,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Methods/activate_evenement.4dm": {
+		"left": -195,
+		"top": 225,
+		"width": 965,
+		"height": 415
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/listbox Evenements.4dm": {
+		"left": -464,
+		"top": 308,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton modifier.4dm": {
+		"left": -196,
+		"top": 199,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton nouveau.4dm": {
+		"left": 13,
+		"top": 299,
+		"width": 701,
+		"height": 401
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton supprimmer.4dm": {
+		"left": 7,
+		"top": 109,
+		"width": 547,
+		"height": 437
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton enregistrer.4dm": {
+		"left": 84,
+		"top": 186,
+		"width": 547,
+		"height": 437
 	}
 }

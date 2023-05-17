@@ -54,7 +54,7 @@
 					"dataSource": "Form:C1466.edited_evenement.libelle",
 					"method": "ObjectMethods/Zone de saisie Evenement Libelle.4dm",
 					"multiline": "no",
-					"enterable": false
+					"enterable": true
 				},
 				"Bouton": {
 					"type": "button",
@@ -172,7 +172,7 @@
 							"enterable": true,
 							"header": {
 								"text": "Date Debut",
-								"name": ""
+								"name": "Entête1"
 							},
 							"footer": {
 								"name": "1"

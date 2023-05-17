@@ -1,45 +1,12 @@
 {
 	"editors": [
 		{
-			"type": "method",
-			"id": 2147483620,
-			"codeDescriptor": {
-				"type": 2,
-				"formName": "Formulaire gestion evenements",
-				"objectName": "Bouton3",
-				"methodPath": "/SOURCES/Forms/Formulaire gestion evenements/ObjectMethods/Bouton3.4dm"
-			}
-		},
-		{
 			"type": "form",
-			"id": 219,
-			"formName": "Formulaire gestion evenements"
-		},
-		{
-			"type": "method",
-			"id": 2147483621,
-			"codeDescriptor": {
-				"type": 2,
-				"formName": "Formulaire gestion evenements",
-				"objectName": "Bouton2",
-				"methodPath": "/SOURCES/Forms/Formulaire gestion evenements/ObjectMethods/Bouton2.4dm"
-			}
+			"id": 361,
+			"formName": "Gestion evenements (LEGACY)"
 		},
 		{
 			"type": "explorer"
-		},
-		{
-			"type": "structure"
-		},
-		{
-			"type": "method",
-			"id": 2147483629,
-			"codeDescriptor": {
-				"type": 2,
-				"formName": "PROJET",
-				"objectName": "Saisie de date Evenement Date fin",
-				"methodPath": "/SOURCES/Forms/PROJET/ObjectMethods/Saisie de date Evenement Date fin.4dm"
-			}
 		}
 	]
 }

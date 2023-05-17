@@ -1,7 +1,11 @@
 {
 	"forms": {
-		"Formulaire gestion evenements": {
-			"timeStamp": "2023-05-12T12:02:55Z",
+		"Gestion evenements (LEGACY)": {
+			"timeStamp": "2023-05-17T09:54:22Z",
+			"destination": "detailScreen"
+		},
+		"Gestion evenements (ORDA)": {
+			"timeStamp": "2023-05-17T08:52:57Z",
 			"destination": "detailScreen"
 		}
 	}

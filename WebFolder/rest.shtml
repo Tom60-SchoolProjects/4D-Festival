@@ -34,14 +34,14 @@
                     // On parcourt les événements
                     for (var i = 0; i < events.__COUNT; i++) {
                         // On ajoute le texte de l'événement
-                        liste.innerHTML += events.__ENTITIES[i].Libelle + ", ";
+                        liste.innerHTML += events.__ENTITIES[i].libelle + ", ";
                     }
                 }
             };
 
             // On ouvre la requête
             var search = document.getElementById("input_search_libelle").value;
-            xhr.open("GET", 'http://localhost/rest/Evenement?$filter="Libelle = \'@' + search + '@\'"', true);
+            xhr.open("GET", 'http://localhost/rest/Evenement?$filter="libelle = \'@' + search + '@\'"', true);
 
             // On envoie la requête
             xhr.send();

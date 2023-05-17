@@ -1,8 +1,14 @@
 {
-	"Sources/Forms/Formulaire gestion evenements/form.4DForm": {
-		"left": 866,
-		"top": 120,
-		"width": 861,
-		"height": 646
+	"Sources/Forms/Formulaire gestion evenements (/form.4DForm": {
+		"left": 248,
+		"top": 137,
+		"width": 842,
+		"height": 536
+	},
+	"Sources/Forms/Gestion evenements (LEGACY)/form.4DForm": {
+		"left": 61,
+		"top": 124,
+		"width": 780,
+		"height": 437
 	}
 }

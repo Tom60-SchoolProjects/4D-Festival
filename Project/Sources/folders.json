@@ -1,4 +1,17 @@
 {
+	"Base de donnée": {
+		"tables": [
+			"Article",
+			"Borne_credit",
+			"Boutique",
+			"Credit",
+			"Evenement",
+			"Participant",
+			"Ticket",
+			"Ticket_detail",
+			"Utilisateur"
+		]
+	},
 	"Classes par défaut": {},
 	"Dossier par défaut": {
 		"groups": [
@@ -8,8 +21,42 @@
 			"Tables par défaut"
 		]
 	},
+	"Evenement": {
+		"methods": [
+			"activate_evenement",
+			"load_evenements"
+		]
+	},
+	"Formulaires": {
+		"forms": [
+			"Gestion evenements (LEGACY)",
+			"Gestion evenements (ORDA)"
+		]
+	},
 	"Formulaires par défaut": {},
+	"Méthodes": {
+		"groups": [
+			"Evenement",
+			"TDs",
+			"WEB"
+		]
+	},
 	"Méthodes projet par défaut": {},
 	"Tables par défaut": {},
+	"TDs": {
+		"methods": [
+			"TD_001",
+			"TD_002",
+			"TD_003",
+			"TD_003_2",
+			"TD_003_3",
+			"TD_004"
+		]
+	},
+	"WEB": {
+		"methods": [
+			"web_load_evenements"
+		]
+	},
 	"trash": {}
 }
