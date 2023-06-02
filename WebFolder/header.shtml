@@ -1,0 +1,50 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <!-- Marque -->
+            <a class="navbar-brand" href="/home.shtml">
+                <i class="bi bi-ticket-detailed"></i> Festival
+            </a>
+
+            <!-- Bouton de navigation -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <!-- Vérification de la connexion de l'utilisateur -->                    
+				    <!--#4DIF (web_context.utilisateur # Null)-->
+
+                    <!-- Affichage du bouton d'inscription et de connexion si l'utilisateur n'est pas connecté -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account.shtml">Mon compte</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn_logout" class="nav-link">Déconnection</a>
+                    </li>
+
+                    <!--#4DELSE-->
+
+                    <!-- Affichage du bouton de déconnexion et de mon compte si l'utilisateur est connecté -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup.shtml">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signin.shtml">Connexion</a>
+                    </li>
+
+                    <!--#4DENDIF-->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/rest.shtml">Recherche</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+</header>

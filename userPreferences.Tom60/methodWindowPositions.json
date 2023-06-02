@@ -77,12 +77,6 @@
 		"width": 965,
 		"height": 626
 	},
-	"Sources/Methods/web_load_evenements.4dm": {
-		"left": 58,
-		"top": 160,
-		"width": 522,
-		"height": 438
-	},
 	"Sources/Forms/PROJET/ObjectMethods/Bouton2.4dm": {
 		"left": 60,
 		"top": 161,
@@ -192,8 +186,8 @@
 		"height": 415
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/method.4dm": {
-		"left": -470,
-		"top": 348,
+		"left": 318,
+		"top": 109,
 		"width": 965,
 		"height": 580
 	},
@@ -268,5 +262,59 @@
 		"top": 186,
 		"width": 547,
 		"height": 437
+	},
+	"Sources/Forms/Gestion evenements (ORDA)/method.4dm": {
+		"left": 318,
+		"top": 109,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Methods/web_signout.4dm": {
+		"left": 148,
+		"top": 121,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Methods/web_signin.4dm": {
+		"left": 129,
+		"top": 109,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Methods/web_account.4dm": {
+		"left": 490,
+		"top": 121,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Methods/tool_getArguments.4dm": {
+		"left": -39,
+		"top": 116,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Methods/web_signup.4dm": {
+		"left": 158,
+		"top": 115,
+		"width": 965,
+		"height": 507
+	},
+	"Sources/Methods/web_load_utilisateurs.4dm": {
+		"left": 176,
+		"top": 122,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Methods/web_load_evenements.4dm": {
+		"left": -183,
+		"top": 129,
+		"width": 965,
+		"height": 438
+	},
+	"Sources/Methods/web_load_boutiques.4dm": {
+		"left": 670,
+		"top": 147,
+		"width": 965,
+		"height": 580
 	}
 }

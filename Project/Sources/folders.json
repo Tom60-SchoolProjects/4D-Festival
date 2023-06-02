@@ -1,4 +1,16 @@
 {
+	"(Classes par défaut)": {},
+	"(Dossier par défaut)": {
+		"groups": [
+			"(Classes par défaut)",
+			"(Formulaires par défaut)",
+			"(Méthodes projet par défaut)",
+			"(Tables par défaut)"
+		]
+	},
+	"(Formulaires par défaut)": {},
+	"(Méthodes projet par défaut)": {},
+	"(Tables par défaut)": {},
 	"Base de donnée": {
 		"tables": [
 			"Article",
@@ -10,15 +22,6 @@
 			"Ticket",
 			"Ticket_detail",
 			"Utilisateur"
-		]
-	},
-	"Classes par défaut": {},
-	"Dossier par défaut": {
-		"groups": [
-			"Classes par défaut",
-			"Formulaires par défaut",
-			"Méthodes projet par défaut",
-			"Tables par défaut"
 		]
 	},
 	"Evenement": {
@@ -33,16 +36,19 @@
 			"Gestion evenements (ORDA)"
 		]
 	},
-	"Formulaires par défaut": {},
 	"Méthodes": {
 		"groups": [
 			"Evenement",
+			"Outils",
 			"TDs",
 			"WEB"
 		]
 	},
-	"Méthodes projet par défaut": {},
-	"Tables par défaut": {},
+	"Outils": {
+		"methods": [
+			"tool_getArguments"
+		]
+	},
 	"TDs": {
 		"methods": [
 			"TD_001",
@@ -55,8 +61,18 @@
 	},
 	"WEB": {
 		"methods": [
-			"web_load_evenements"
+			"web_account",
+			"web_load_boutiques",
+			"web_load_evenements",
+			"web_load_utilisateurs",
+			"web_signin",
+			"web_signout",
+			"web_signup"
 		]
 	},
-	"trash": {}
+	"trash": {
+		"groups": [
+			"(Dossier par défaut)"
+		]
+	}
 }

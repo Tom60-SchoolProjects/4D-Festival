@@ -1,12 +1,31 @@
 {
 	"editors": [
 		{
-			"type": "form",
-			"id": 361,
-			"formName": "Gestion evenements (LEGACY)"
+			"type": "structure"
 		},
 		{
 			"type": "explorer"
+		},
+		{
+			"type": "method",
+			"id": 2147483611,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_load_boutiques"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483639,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "web_load_utilisateurs"
+			}
+		},
+		{
+			"type": "form",
+			"id": 220,
+			"formName": "Gestion evenements (ORDA)"
 		}
 	]
 }

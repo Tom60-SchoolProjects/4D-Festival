@@ -1,48 +1,93 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!doctype html>
+<html lang="fr" data-bs-theme="dark">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>TITLE</title>
-		<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/styles.css?vers=1">
-
-
-		<script src="/vendors/jquery.min.js"></script>
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/0.9.1/jquery.tablednd.js" integrity="sha256-d3rtug+Hg1GZPB7Y/yTcRixO/wlI78+2m08tosoRn7A=" crossorigin="anonymous"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script> -->
-
-		<script src="/scripts/script.js?vers=4"></script>
-
+		<!-- Metadata -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Accueille - Festival</title>
+		
+		<!-- Bootstrap 5.3 CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<!-- jQuery 3.7.0 script -->
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<!-- Custom script -->
+		<script src="/scripts/script.js"></script>
 	</head>
 	<body>
+        <!-- Header -->
+        <header id="header"></header>
 
-			<h1>Accueille</h1>
-			<div class="container mt-3">
+        <!-- Body -->
+        <div class="container">
+			<div>
+				<h1>Accueille</h1>
+				
+				<!-- Liste des utilisateurs LEGACY -->
+				<h3>Utilisateurs</h3>
 
-				<!--#4DTEXT Current Time--><br />
-				<!--#4DIF (web_context.utilisateur # Null)-->
-					Bonjour : <!--4DTEXT web_context.utilisateur.Prenom--><br>
-					<a href="/account.shtml" class="btn btn-sm btn-primary mt-3">Mon compte</a><br>
-					<button id="btn_logout" class="btn btn-sm btn-danger">Déconnection</button>
-				<!--#4DELSE-->
-					<a href="/inscription.shtml" class="btn btn-sm btn-primary">Inscription</a><br>
-					<a href="/login.shtml" class="btn btn-sm btn-primary mt-3">Connection</a><br>
-				<!--#4DENDIF-->
-
-			<br><br><br>
-			<!--#4DSCRIPT/web_load_evenements-->
-	
-			<table class="table table-bordered">
-				<tr><th>Nom</th><th>Ville</th></tr>
-			<!--#4DEACH $evenement in web_load_evenements.evenements -->
-				<tr>
-					<td>$4DTEXT([EVENEMENT]Nom)</td>
-					<td>$4DTEXT([EVENEMENT]Ville)</td>
-				</tr>
-			<!--#4DENDEACH-->
-			</table>
+				<!--#4DSCRIPT/web_load_utilisateurs-->				
+				<table class="table table-bordered">
+					<tr>
+						<th>Nom</th>
+						<th>Prénom</th>
+						<th>Email</th>
+					</tr>
+					
+					<!--#4DLOOP [Utilisateur]-->
+						<tr>
+							<td>$4DTEXT([Utilisateur]nom)</td>
+							<td>$4DTEXT([Utilisateur]prenom)</td>
+							<td>$4DTEXT([Utilisateur]email)</td>
+						</tr>
+					<!--#4DENDEACH-->
+				</table>
 			</div>
+
+			<!-- Liste des évènements ORDA -->
+			<div>
+				<h3>Évènements</h3>
+
+				<!--#4DSCRIPT/web_load_evenements-->
+				<table class="table table-bordered">
+					<tr>
+						<th>Libelle</th>
+						<th>Date de début</th>
+						<th>Date de fin</th>
+					</tr>
+
+					<!--#4DEACH $evenement in evenements-->
+						<tr>
+							<td>$4DTEXT($evenement.libelle)</td>
+							<td>$4DTEXT($evenement.date_debut)</td>
+							<td>$4DTEXT($evenement.date_fin)</td>*
+						</tr>
+					<!--#4DENDEACH-->
+				</table>
+			</div>
+
+			<!-- Liste des Boutiques des évènements ORDA -->
+			<div>
+				<h3>Boutiques</h3>
+
+				<!--#4DSCRIPT/web_load_boutiques-->
+				<table class="table table-bordered">
+					<tr>
+						<th>Nom</th>
+						<th>Évènements</th>
+					</tr>
+					
+					<!--#4DEACH $boutique in boutiques-->
+						<tr>
+							<td>$4DTEXT($boutique.nom)</td>
+							<td>$4DTEXT($boutique.Evenement.libelle)</td>
+						</tr>
+					<!--#4DENDEACH-->
+				</table>
+			</div>
+        </div>
+
+        <!-- Scripts -->
+		<script src="/scripts/template.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	</body>
-	<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>

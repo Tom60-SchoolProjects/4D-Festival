@@ -1,30 +1,23 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
+  $('#form_login')
+    .submit(function (event) {
+      event.preventDefault();// Pour éviter d'exectuer l'action et du coup de changer de page
 
-  $('#form_login').submit(function (event) {
-    event.preventDefault();// Pour éviter d'exectuer l'action et du coup de changer de page
+      var formContent = $(this).serialize();
 
-    var formContent = $(this).serialize();
-
-    $.ajax(
-        {
+      $.ajax({
         method: "POST",
-        url : "/4DACTION/wForm_Login",
+        url: "/4DACTION/web_signin",
         data: formContent
-        }
-      )
-      .done(
-        function(response){
+      }).done(function (response) {
           if (response.error_code == 0) {
-            // location.reload(true);
             window.location = '/home.shtml';
-            // alert('OK');
           }
           else {
             alert(response.error_message);
           }
-        }
-      );
+      });
   });
 
   $('#form_inscription').submit(function (event) {
@@ -33,18 +26,16 @@ $(document).ready(function(){
     var formContent = $(this).serialize();
 
     $.ajax(
-        {
+      {
         method: "POST",
-        url : "/4DACTION/wForm_Inscription",
+        url: "/4DACTION/web_signup",
         data: formContent
-        }
-      )
+      }
+    )
       .done(
-        function(response){
+        function (response) {
           if (response.error_code == 0) {
-            // location.reload(true);
             window.location = '/home.shtml';
-            // alert('OK');
           }
           else {
             alert(response.error_message);
@@ -59,42 +50,16 @@ $(document).ready(function(){
     var formContent = $(this).serialize();
 
     $.ajax(
-        {
+      {
         method: "POST",
-        url : "/4DACTION/wForm_Account",
+        url: "/4DACTION/web_account",
         data: formContent
-        }
-      )
+      }
+    )
       .done(
-        function(response){
+        function (response) {
           if (response.error_code == 0) {
-            // location.reload(true);
             window.location = '/home.shtml';
-            // alert('OK');
-          }
-          else {
-            alert(response.error_message);
-          }
-        }
-      );
-  });
-
-  
-  $('#btn_logout').click(function (event) {
-    event.preventDefault();// Pour éviter d'exectuer l'action et du coup de changer de page
-
-    $.ajax(
-        {
-        method: "POST",
-        url : "/4DACTION/wForm_Logout"
-        }
-      )
-      .done(
-        function(response){
-          if (response.error_code == 0) {
-            location.reload(true);
-            //window.location = '/home.shtml';
-            // alert('OK');
           }
           else {
             alert(response.error_message);
@@ -104,3 +69,20 @@ $(document).ready(function(){
   });
 
 });
+
+function signout(event) {
+  // Pour éviter d'exectuer l'action et du coup de changer de page
+  event.preventDefault();
+
+  $.ajax( {
+      method: "POST",
+      url: "/4DACTION/web_signout"
+    }).done(
+      function (response) {
+        if (response.error_code == 0)
+          location.reload(true);
+        else
+          alert(response.error_message);
+      }
+    );
+}

@@ -24,8 +24,47 @@
 		"TD_004": {
 			"timeStamp": "2023-05-17T08:09:20Z"
 		},
+		"tool_getArguments": {
+			"timeStamp": "2023-06-02T09:49:12Z"
+		},
+		"web_account": {
+			"timeStamp": "2023-06-02T11:11:32Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"web_load_boutiques": {
+			"timeStamp": "2023-06-02T11:47:49Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
 		"web_load_evenements": {
-			"timeStamp": "2023-04-14T13:59:28Z",
+			"timeStamp": "2023-06-02T09:55:25Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"web_load_utilisateurs": {
+			"timeStamp": "2023-06-02T11:43:33Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"web_signin": {
+			"timeStamp": "2023-06-02T11:11:05Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"web_signout": {
+			"timeStamp": "2023-06-02T09:47:51Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"web_signup": {
+			"timeStamp": "2023-06-02T11:23:24Z",
 			"attributes": {
 				"publishedWeb": true
 			}
