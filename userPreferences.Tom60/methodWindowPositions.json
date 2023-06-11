@@ -186,8 +186,8 @@
 		"height": 415
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/method.4dm": {
-		"left": 318,
-		"top": 109,
+		"left": 232,
+		"top": 502,
 		"width": 965,
 		"height": 580
 	},
@@ -210,10 +210,10 @@
 		"height": 415
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Zone de saisie Evenement Libelle.4dm": {
-		"left": -327,
-		"top": 320,
+		"left": -3,
+		"top": 322,
 		"width": 965,
-		"height": 415
+		"height": 398
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/Listbox Evenements.4dm": {
 		"left": 17,
@@ -234,28 +234,28 @@
 		"height": 415
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/listbox Evenements.4dm": {
-		"left": -464,
-		"top": 308,
+		"left": 759,
+		"top": 246,
 		"width": 965,
 		"height": 580
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton modifier.4dm": {
-		"left": -196,
-		"top": 199,
+		"left": 521,
+		"top": 564,
 		"width": 965,
 		"height": 580
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton nouveau.4dm": {
-		"left": 13,
-		"top": 299,
-		"width": 701,
-		"height": 401
+		"left": 138,
+		"top": 239,
+		"width": 1633,
+		"height": 835
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton supprimmer.4dm": {
-		"left": 7,
-		"top": 109,
-		"width": 547,
-		"height": 437
+		"left": 1151,
+		"top": 271,
+		"width": 927,
+		"height": 816
 	},
 	"Sources/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton enregistrer.4dm": {
 		"left": 84,
@@ -312,9 +312,57 @@
 		"height": 438
 	},
 	"Sources/Methods/web_load_boutiques.4dm": {
-		"left": 670,
-		"top": 147,
+		"left": 364,
+		"top": 115,
 		"width": 965,
 		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/method.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Listbox Evenements.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Listbox utilisateurs.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Bouton2.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Bouton.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Bouton3.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Forms/Gestion utilisateurs (ORDA)/ObjectMethods/Bouton1.4dm": {
+		"left": 364,
+		"top": 115,
+		"width": 965,
+		"height": 580
+	},
+	"Sources/Triggers/table_3.4dm": {
+		"left": 138,
+		"top": 239,
+		"width": 1633,
+		"height": 835
 	}
 }

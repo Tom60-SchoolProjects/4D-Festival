@@ -1,31 +1,35 @@
 {
 	"editors": [
 		{
-			"type": "structure"
+			"type": "form",
+			"id": 219,
+			"formName": "Gestion evenements (LEGACY)"
+		},
+		{
+			"type": "method",
+			"id": 2147483613,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "Gestion evenements (LEGACY)",
+				"objectName": "listbox Evenements",
+				"methodPath": "/SOURCES/Forms/Gestion evenements (LEGACY)/ObjectMethods/listbox Evenements.4dm"
+			}
+		},
+		{
+			"type": "method",
+			"id": 2147483615,
+			"codeDescriptor": {
+				"type": 2,
+				"formName": "Gestion evenements (LEGACY)",
+				"objectName": "bouton supprimmer",
+				"methodPath": "/SOURCES/Forms/Gestion evenements (LEGACY)/ObjectMethods/bouton supprimmer.4dm"
+			}
 		},
 		{
 			"type": "explorer"
 		},
 		{
-			"type": "method",
-			"id": 2147483611,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "web_load_boutiques"
-			}
-		},
-		{
-			"type": "method",
-			"id": 2147483639,
-			"codeDescriptor": {
-				"type": 1,
-				"methodName": "web_load_utilisateurs"
-			}
-		},
-		{
-			"type": "form",
-			"id": 220,
-			"formName": "Gestion evenements (ORDA)"
+			"type": "structure"
 		}
 	]
 }

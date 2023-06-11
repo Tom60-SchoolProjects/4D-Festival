@@ -27,7 +27,7 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="Evenement" uuid="F28A7787D7240D46833E00C121222FCB" id="3" leave_tag_on_delete="true" prevent_journaling="true">
+	<table name="Evenement" uuid="F28A7787D7240D46833E00C121222FCB" id="3" prevent_journaling="true">
 		<field name="id" uuid="6704820D43B551408983C605057427EE" type="4" unique="true" autosequence="true" id="1"/>
 		<field name="libelle" uuid="E8E80BEB4F2E1C46A2061767C68CD076" type="10" limiting_length="255" not_null="true" id="2"/>
 		<field name="date_debut" uuid="3728D18B129DEB478674D3A34E02BBF6" type="8" id="3"/>
@@ -51,7 +51,7 @@
 		<table_extra>
 			<editor_table_info displayable_fields_count="6">
 				<color red="114" green="209" blue="221" alpha="255"/>
-				<coordinates left="390" top="4" width="120" height="171.33203125"/>
+				<coordinates left="390" top="4" width="120" height="172.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>

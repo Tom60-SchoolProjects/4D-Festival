@@ -152,7 +152,7 @@
 						"onHeaderClick"
 					],
 					"bottom": 350,
-					"table": 11,
+					"table": "Evenement",
 					"columns": [
 						{
 							"name": "Libelle",
@@ -263,11 +263,25 @@
 					"width": 124,
 					"height": 15,
 					"fontWeight": "bold"
+				},
+				"ModeTexte": {
+					"type": "text",
+					"text": "Legacy mode",
+					"top": 385,
+					"left": 572,
+					"width": 88,
+					"height": 12,
+					"textDecoration": "none",
+					"fontWeight": "normal",
+					"fontStyle": "italic",
+					"fontTheme": "normal",
+					"textAlign": "right",
+					"fontSize": 9
 				}
 			}
 		}
 	],
-	"geometryStamp": 247,
+	"geometryStamp": 254,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {

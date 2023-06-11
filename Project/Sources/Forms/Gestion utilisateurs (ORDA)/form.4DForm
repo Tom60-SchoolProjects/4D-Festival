@@ -36,23 +36,23 @@
 		},
 		{
 			"objects": {
-				"Texte Form événement": {
+				"Texte Form utilisateur": {
 					"type": "text",
-					"text": "Formulaire événement :",
+					"text": "Formulaire utilisateur :",
 					"top": 20,
 					"left": 420,
 					"width": 138,
 					"height": 20,
 					"fontWeight": "bold"
 				},
-				"Zone de saisie Evenement Libelle": {
+				"Zone de saisie utilisateur nom": {
 					"type": "input",
 					"left": 520,
 					"top": 70,
 					"width": 140,
 					"height": 20,
-					"dataSource": "Form:C1466.edited_evenement.libelle",
-					"method": "ObjectMethods/Zone de saisie Evenement Libelle.4dm",
+					"dataSource": "Form:C1466.edited_utilisateur.nom",
+					"method": "ObjectMethods/Zone de saisie utilisateur nom.4dm",
 					"multiline": "no",
 					"enterable": true
 				},
@@ -88,17 +88,17 @@
 					"width": 40,
 					"height": 20
 				},
-				"Texte1": {
+				"Texte prenom": {
 					"type": "text",
-					"text": "Date de début :",
+					"text": "Prenom :",
 					"top": 103,
 					"left": 420,
 					"width": 81,
 					"height": 18
 				},
-				"Texte2": {
+				"Texte email": {
 					"type": "text",
-					"text": "Date de fin :",
+					"text": "Email : ",
 					"top": 130,
 					"left": 420,
 					"width": 66,
@@ -129,9 +129,9 @@
 					"method": "ObjectMethods/Bouton3.4dm",
 					"right": 385
 				},
-				"Listbox Evenements": {
+				"Listbox utilisateurs": {
 					"type": "listbox",
-					"dataSource": "Form:C1466.evenements",
+					"dataSource": "Form:C1466.utilisateurs",
 					"top": 50,
 					"left": 20,
 					"width": 370,
@@ -144,17 +144,17 @@
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "automatic",
 					"resizingMode": "legacy",
-					"method": "ObjectMethods/Listbox Evenements.4dm",
+					"method": "ObjectMethods/Listbox utilisateurs.4dm",
 					"selectionMode": "single",
 					"events": [
 						"onSelectionChange"
 					],
-					"currentItemSource": "Form:C1466.selected_evenement",
+					"currentItemSource": "Form:C1466.selected_utilisateur",
 					"bottom": 350,
 					"columns": [
 						{
-							"name": "Libelle",
-							"dataSource": "This:C1470.libelle",
+							"name": "Nom",
+							"dataSource": "This:C1470.nom",
 							"width": 120,
 							"enterable": true,
 							"header": {
@@ -166,8 +166,8 @@
 							}
 						},
 						{
-							"name": "Date debut",
-							"dataSource": "This:C1470.date_debut",
+							"name": "Prénom",
+							"dataSource": "This:C1470.prenom",
 							"width": 120,
 							"enterable": true,
 							"header": {
@@ -184,7 +184,7 @@
 							"width": 120,
 							"enterable": true,
 							"header": {
-								"text": "Date fin",
+								"text": "Email",
 								"name": "2"
 							},
 							"footer": {
@@ -192,27 +192,6 @@
 							}
 						}
 					]
-				},
-				"Saisie de date Evenement Date debut": {
-					"type": "subform",
-					"top": 100,
-					"left": 520,
-					"width": 138,
-					"height": 25,
-					"dataSource": "Form:C1466.edited_evenement.date_debut",
-					"dataSourceTypeHint": "date",
-					"detailForm": "DateEntry",
-					"hideFocusRing": true,
-					"deletableInList": false,
-					"doubleClickInRowAction": "editSubrecord",
-					"doubleClickInEmptyAreaAction": "addSubrecord",
-					"selectionMode": "multiple",
-					"printFrame": "variable",
-					"method": "ObjectMethods/Saisie de date Evenement Date debut.4dm",
-					"events": [
-						"onLoad"
-					],
-					"focusable": true
 				},
 				"Séparateur1": {
 					"type": "splitter",
@@ -232,60 +211,67 @@
 					],
 					"bottom": 350
 				},
-				"Saisie de date Evenement Date fin": {
-					"type": "subform",
-					"top": 130,
-					"left": 520,
-					"width": 138,
-					"height": 25,
-					"dataSource": "Form:C1466.edited_evenement.date_fin",
-					"dataSourceTypeHint": "date",
-					"detailForm": "DateEntry",
-					"hideFocusRing": true,
-					"deletableInList": false,
-					"doubleClickInRowAction": "editSubrecord",
-					"doubleClickInEmptyAreaAction": "addSubrecord",
-					"selectionMode": "multiple",
-					"printFrame": "variable",
-					"method": "ObjectMethods/Saisie de date Evenement Date fin.4dm",
-					"events": [
-						"onLoad"
-					],
-					"focusable": true
-				},
-				"Texte liste evenement": {
+				"Texte liste utilisateurs": {
 					"type": "text",
-					"text": "Liste d'événements :",
+					"text": "Liste d'utilisateurs :",
 					"top": 20,
 					"left": 20,
 					"width": 124,
 					"height": 15,
 					"fontWeight": "bold"
+				},
+				"ModeTexte": {
+					"type": "text",
+					"text": "Orda mode",
+					"top": 385,
+					"left": 572,
+					"width": 88,
+					"height": 12,
+					"textDecoration": "none",
+					"fontWeight": "normal",
+					"fontStyle": "italic",
+					"fontTheme": "normal",
+					"textAlign": "right",
+					"fontSize": 9
+				},
+				"Zone de saisie utilisateur prenom": {
+					"type": "input",
+					"left": 520,
+					"top": 102,
+					"width": 140,
+					"height": 20,
+					"dataSource": "Form:C1466.edited_utilisateur.prenom",
+					"method": "ObjectMethods/Zone de saisie utilisateur prenom.4dm",
+					"multiline": "no",
+					"enterable": true
+				},
+				"Zone de saisie utilisateur email": {
+					"type": "input",
+					"left": 518,
+					"top": 130,
+					"width": 140,
+					"height": 20,
+					"dataSource": "Form:C1466.edited_utilisateur.email",
+					"method": "ObjectMethods/Zone de saisie utilisateur email.4dm",
+					"multiline": "no",
+					"enterable": true
 				}
 			}
 		}
 	],
-	"geometryStamp": 238,
+	"geometryStamp": 258,
 	"method": "method.4dm",
 	"editor": {
 		"groups": {
-			"Group": [
-				"Texte2",
-				"Saisie de date Evenement Date fin"
-			],
-			"Group1": [
-				"Texte1",
-				"Saisie de date Evenement Date debut"
-			],
 			"Group2": [
-				"Zone de saisie Evenement Libelle",
+				"Zone de saisie utilisateur nom",
 				"Texte"
 			],
 			"Group3": [
 				"Bouton1",
 				"Bouton3",
-				"Listbox Evenements",
-				"Texte liste evenement"
+				"Listbox utilisateurs",
+				"Texte liste utilisateurs"
 			]
 		},
 		"activeView": "View 1",
